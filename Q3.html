@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+         
+
+            background-image: url('Picture1fee.png');
+            background-size: cover;
+          }
+          
+        
+      
+      
+      
+      .login-box {
+
+        color: rgb(250, 250, 250);
+
+        
+        width: 800px;
+        height: 1000px;
+        background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #54bada 74%);
+        padding: 0px;
+        
+        float: right;
+        
+        
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="password"] {
+        padding: 5px;
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid lightgray;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        
+      }
+      
+      input[type="submit"] {
+        background-color: white;
+        color: black;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: rgb(211, 52, 52);
+      }
+      a{
+        text-align: right;
+        float: right;
+      }
+      button{
+        margin-top:50px  ;
+        margin-left:70px;
+        height: 40px;
+        width: 180px;
+        font-size: 18px;
+        background-color: black;
+        color: white;
+      }
+      .d2{
+        flex-wrap: wrap;
+        display: inline-flex;
+        background: transparent;
+        border: none;
+
+        
+        
+      }
+    a:hover{
+      display: flow-root;
+      border: #3edf46;
+      border-radius: 20%;
+      background-color: aqua;
+
+
+    }
+
+    
+    </style>
+    
+  </head>
+  <body>
+        <div class="login-box">
+      <h1><u></u>Login</h1>
+      <form>
+        <b>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" style="width=50px">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"> <br>
+        <input type="Checkbox" id="password" name="remeber me" style="color: red;" >Remember me  
+        <a href="#"  style="color: red;">Forget Password?</a><br>
+        
+        <button type="button" onclick="showMessage()">Login</button>
+      </form>
+      <div id="message" class="message" style="display: none; color: rgb(74, 252, 38);"><h3>You are logged in !!</h3></div>
+    </b>
+   
+        
+        
+    
+    <H2></H2> Login with social media account</H2> <br>
+    <div class="d2">
+       <a href="https://accounts.google.com/v3/signin/identifier?dsh=S2080391033%3A1682946984632349&authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue%26pli%3D1&ec=GAlAwAE&hl=en_GB&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession"> <button class = "d2"> <img src="gmail.png" height="60" width="70"></button></a>
+        <a href="https://www.facebook.com/login"><button class = "d2"> <img src="facebook.png" height="60" width="70"></button></a>
+        <a herf="https://twitter.com/i/flow/signup"><button class = "d2"> <img src="twitter.png" height="60" width="70" ></button></a>
+      </form>
+    </div>
+      <div class="d1"></div>
+    </div>
+    <script> 
+      function showMessage() {
+        document.getElementById("message").style.display = "block";
+        
+      
+      }</script>
+    </div>
+  </body>
+</html>
